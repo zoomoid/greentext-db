@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DATABASE: greentext-db
+      POSTGRES_USERNAME: sigma
+      POSTGRES_PASSWORD: sigma
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+volumes:
+  postgres:
